@@ -1,13 +1,15 @@
 # rdict
 An offline CLI dictionary written in rust, using data from wiktionary.
 
+Modified to display 50 columns wide.
+
 ## Installation
 
 ####  Install the Rust toolchain: [https://rustup.rs](https://rustup.rs)
 
 #### Install from source:
 ```bash
-$ cargo install --git https://github.com/Lodobo/rdict
+$ cargo install --git https://github.com/albertfilice/rdict_50columns
 ```
 
 #### Download json (1.5GB):

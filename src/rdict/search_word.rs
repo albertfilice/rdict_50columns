@@ -86,7 +86,7 @@ fn print_word_information(output: &mut String, row: &Row) -> Result<(), AppError
         if let Some(etymology) = &information.etymology_text {
             if etymology.len() > 0 {
                 write!(output, "\n{}\n\n", Style::new().bold().paint("# Etymology"))?;
-                writeln!(output, "{}", wrap_text(etymology, 50, 2))?;
+                writeln!(output, "{}", wrap_text(etymology, 49, 2))?;
             }
         }
         // Print Definitions
@@ -96,13 +96,13 @@ fn print_word_information(output: &mut String, row: &Row) -> Result<(), AppError
                 write!(
                     output,
                     "\n{}\n",
-                    Style::new().bold().paint(wrap_text(def, 50, 2))
+                    Style::new().bold().paint(wrap_text(def, 49, 2))
                 )?;
             }
             if let Some(examples) = &definition.examples {
                 for example in examples {
                     if let Some(text) = &example.text {
-                        write!(output, "\n{}\n", wrap_text(&format!("\"{}\"", text), 44, 6))?;
+                        write!(output, "\n{}\n", wrap_text(&format!("\"{}\"", text), 43, 6))?;
                     }
                 }
             }
