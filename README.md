@@ -1,7 +1,7 @@
 # rdict
 An offline CLI dictionary written in rust, using data from wiktionary.
 
-Modified to display 50 columns wide.
+Modified to display *_49_* columns wide.
 
 ## Installation
 
